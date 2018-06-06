@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ibadvisor_erp *.css
+recursive-include ibadvisor_erp *.csv
+recursive-include ibadvisor_erp *.html
+recursive-include ibadvisor_erp *.ico
+recursive-include ibadvisor_erp *.js
+recursive-include ibadvisor_erp *.json
+recursive-include ibadvisor_erp *.md
+recursive-include ibadvisor_erp *.png
+recursive-include ibadvisor_erp *.py
+recursive-include ibadvisor_erp *.svg
+recursive-include ibadvisor_erp *.txt
+recursive-exclude ibadvisor_erp *.pyc
