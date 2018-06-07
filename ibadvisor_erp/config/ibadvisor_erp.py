@@ -30,13 +30,55 @@ def get_data():
 			]
 		},
 		{
-			"label": _("Accounting"),
+			"label": _("Billing"),
+			"items": [
+				{
+					"type": "doctype",
+					"name": "Quotation",
+					"description": _("Quotes to Leads or Customers."),
+				},
+				{
+					"type": "doctype",
+					"name": "Sales Order",
+					"description": _("Confirmed orders from Customers."),
+				},
+				{
+					"type": "doctype",
+					"name": "Sales Invoice",
+					"description": _("Bills raised to Customers.")
+				},
+				{
+					"type": "doctype",
+					"name": "Payment Request",
+					"description": _("Payment Request")
+				},
+				{
+					"type": "doctype",
+					"name": "Payment Entry",
+					"description": _("Bank/Cash transactions against party or for internal transfer")
+				},
+				{
+					"type": "doctype",
+					"name": "Subscription",
+					"label": _("Subscription"),
+					"description": _("To make recurring documents")
+				}
+			]
+
+		},
+		{
+			"label": _("Company And Accounting"),
 			"icon": "fa fa-list",
 			"items": [
 				{
 					"type": "doctype",
 					"name": "Company",
 					"description": _("Company (not Customer or Supplier) master.")
+				},
+				{
+					"type": "doctype",
+					"name": "Journal Entry",
+					"description": _("Accounting journal entries.")
 				},
 				{
 					"type": "doctype",
@@ -47,24 +89,69 @@ def get_data():
 					"description": _("Tree of financial accounts."),
 				},
 				{
-					"type": "doctype",
-					"name": "Cost Center",
-					"icon": "fa fa-sitemap",
-					"label": _("Cost Center"),
-					"route": "Tree/Cost Center",
-					"description": _("Tree of financial accounts."),
-				},
-				{
 					"type": "report",
 					"name":"General Ledger",
 					"doctype": "GL Entry",
 					"is_query_report": True,
 				},
+			]
+		},
+		{
+			"label": _("Budget and Cost Center"),
+			"items": [
 				{
 					"type": "doctype",
-					"name": "Journal Entry",
-					"description": _("Accounting journal entries.")
-				}
+					"name": "Cost Center",
+					"icon": "fa fa-sitemap",
+					"label": _("Chart of Cost Centers"),
+					"route": "Tree/Cost Center",
+					"description": _("Tree of financial Cost Centers."),
+				},
+				{
+					"type": "doctype",
+					"name": "Budget",
+					"description": _("Define budget for a financial year.")
+				},
+				{
+					"type": "report",
+					"name": "Budget Variance Report",
+					"is_query_report": True,
+					"doctype": "Cost Center"
+				},
+				{
+					"type":"doctype",
+					"name": "Monthly Distribution",
+					"description": _("Seasonality for setting budgets, targets etc.")
+				},
+			]
+		},
+		{
+			"label": _("Accounting Statements"),
+			"items": [
+				{
+					"type": "report",
+					"name": "Trial Balance",
+					"doctype": "GL Entry",
+					"is_query_report": True,
+				},
+				{
+					"type": "report",
+					"name": "Balance Sheet",
+					"doctype": "GL Entry",
+					"is_query_report": True
+				},
+				{
+					"type": "report",
+					"name": "Cash Flow",
+					"doctype": "GL Entry",
+					"is_query_report": True
+				},
+				{
+					"type": "report",
+					"name": "Profit and Loss Statement",
+					"doctype": "GL Entry",
+					"is_query_report": True
+				},
 			]
 		},
 		{
