@@ -120,3 +120,8 @@ app_license = "MIT"
 # 	"frappe.desk.doctype.event.event.get_events": "ibadvisor_erp.event.get_events"
 # }
 
+
+fixtures = [{"dt": "Custom Field", "filters": [["name", "in", [
+        "Sales Invoice-department",
+	]]]}
+]
