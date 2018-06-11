@@ -123,5 +123,7 @@ app_license = "MIT"
 
 fixtures = [{"dt": "Custom Field", "filters": [["name", "in", [
         "Sales Invoice-department",
-	]]]}
+	]]]},
+	{"dt": "Print Format", "filters": [["name", "in", ["IBA Tax Invoice"]]]},
+	{"dt": "Terms and Conditions", "filters": [["name", "in", ["IBA"]]]}
 ]
