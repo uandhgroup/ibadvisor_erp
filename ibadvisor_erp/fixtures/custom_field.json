@@ -63,7 +63,7 @@
   "modified": "2018-06-12 15:42:13.341134", 
   "name": "Sales Invoice Item-service", 
   "no_copy": 0, 
-  "options": "Monthly\nQuterly\nhalf-yearly\nyearly", 
+  "options": "Monthly\nQuterly\nHalf-Yearly\nYearly", 
   "permlevel": 0, 
   "precision": "", 
   "print_hide": 0, 
