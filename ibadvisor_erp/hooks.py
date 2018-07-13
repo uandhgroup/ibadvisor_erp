@@ -125,6 +125,7 @@ fixtures = [{"dt": "Custom Field", "filters": [["name", "in", [
         "Sales Invoice-department", "Sales Invoice Item-service",
         "Sales Invoice-year", "Sales Invoice-abbr",
 	]]]},
+	{"dt": "Custom Script", "filters":[["name", "not in", ["Sales Invoice-Client", "Project-Client"]]]}, 
 	{"dt": "Print Format", "filters": [["name", "in", ["IBA Tax Invoice"]]]},
 	{"dt": "Terms and Conditions", "filters": [["name", "in", ["IBA"]]]}
 ]
